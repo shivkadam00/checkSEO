@@ -33,6 +33,9 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.body,
+    alternates:{
+      canonical:`https://check-seo-seven.vercel.app/posts/${postId}`
+    }
     // openGraph: {
     //   images: [
     //     {
